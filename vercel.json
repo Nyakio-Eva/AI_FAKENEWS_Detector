@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "myfakenewsdetector/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "myfakenewsdetector/wsgi.py"
+      }
+    ]
+}

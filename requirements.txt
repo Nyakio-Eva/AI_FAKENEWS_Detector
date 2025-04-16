@@ -1,0 +1,26 @@
+# Core Django requirements
+Django>=4.2.0,<5.0.0  # Specify your Django version
+gunicorn>=21.2.0      # Web server for production
+whitenoise>=6.5.0     # For serving static files
+
+# Database connectors
+psycopg2-binary>=2.9.9  # For PostgreSQL
+dj-database-url>=2.1.0  # For parsing database URLs from environment
+
+# Security and environment
+python-dotenv>=1.0.0   # For loading environment variables
+django-environ>=0.11.2  # Alternative for environment management
+
+# Common Django add-ons (include only what you're using)
+djangorestframework>=3.14.0  # If you're building an API
+django-cors-headers>=4.3.1   # If you need CORS support
+django-allauth>=0.58.2       # If you need advanced authentication
+django-storages>=1.14.2      # If using cloud storage for static/media files
+
+# Production-specific tools
+sentry-sdk>=1.39.1   # For error tracking (optional)
+
+# Any other packages specific to your project
+# pillow>=10.1.0     # If you're working with images
+# django-crispy-forms>=2.0  # For better form rendering
+# celery>=5.3.6      # If you need task queuing

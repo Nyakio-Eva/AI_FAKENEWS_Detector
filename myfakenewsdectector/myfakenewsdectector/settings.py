@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-q^+4-w4k!k3)_5t=zekql3@ir)6km&qs(_$uo7j%51gr+c&e^p'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['truthlensai-five.vercel.app']
 
 
 # Application definition
@@ -114,6 +114,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+AUTH_USER_MODEL = "users.CustomUser"
 
 
 # Internationalization
